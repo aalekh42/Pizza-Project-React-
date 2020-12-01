@@ -1,3 +1,17 @@
+(My Start for this project)
+Steps
+I.INSTALLATION OF REACT APP
+
+1.Install yarn globally(yarn global add create-react-app).
+2.Create-react-app foldername.
+3.cd foldername then do yarn start.
+
+II.Initial Setup
+
+1.Remove unnecessary files which are not going to be used future i.e for me app.css,serviceworker,app.test.js,logo,setuptests.js .
+2.Update App.js 
+3.Create a folder named Components and create 3 js files and make necessary changes
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
