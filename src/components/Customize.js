@@ -23,7 +23,6 @@ export default function Customize({ingredients,setIngredients}){
       };
 return(
     <>
-        {JSON.stringify(ingredients)}
         <div className="row">
             <div className="col" sm={4} style={{border:"2px solid black"}}>
                 <div style={{maxHeight:500,maxWidth:500,position:"relative"}}>
@@ -107,7 +106,7 @@ return(
                 </div>
             </div>
             <div className="col" sm={8} style={{border:"2px solid blue"}}>
-                <label class="container-checkbox">
+                <label className="container-checkbox">
                   Pineapple
                     <input 
                     type="checkbox" 
@@ -117,7 +116,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label class="container-checkbox">
+                <label className="container-checkbox">
                   Basil
                     <input 
                     type="checkbox" 
@@ -127,7 +126,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label class="container-checkbox">
+                <label className="container-checkbox">
                   Olive
                     <input 
                     type="checkbox" 
@@ -137,7 +136,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label class="container-checkbox">
+                <label className="container-checkbox">
                   Tomato
                     <input 
                     type="checkbox" 
@@ -147,17 +146,17 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label class="container-checkbox">
+                <label className="container-checkbox">
                   Mushroom
                     <input 
                     type="checkbox" 
-                    checked={ingredients["mushoom"]} 
+                    checked={ingredients["mushroom"]} 
                     onChange={(event)=>
                                 onChange(event.currentTarget.checked,"mushroom")} 
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label class="container-checkbox">
+                <label className="container-checkbox">
                   Cheese
                     <input 
                     type="checkbox" 
