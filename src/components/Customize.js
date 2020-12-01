@@ -24,7 +24,7 @@ return(
     <>
         {JSON.stringify(ingredients)}
         <div className="row">
-            <div className="col" style={{border:"2px solid black"}}>
+            <div className="col" sm={4} style={{border:"2px solid black"}}>
                 <div style={{maxHeight:500,maxWidth:500,position:"relative"}}>
 
                     <motion.div
@@ -105,7 +105,7 @@ return(
                     </motion.div>
                 </div>
             </div>
-            <div className="col" style={{border:"2px solid blue"}}>
+            <div className="col" sm={8} style={{border:"2px solid blue"}}>
                 <label class="container-checkbox">
                   Pineapple
                     <input 
