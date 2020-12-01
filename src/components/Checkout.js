@@ -9,7 +9,7 @@ return(
     <>
         <div className="row">
             <div className="col" style={{border:"2px solid black"}}>
-                <div>My Ingredients</div>
+                <p style={{ fontFamily: "Comfortaa" }}>My Ingredients</p>
                 {Object.keys(ingredients).map((ingredient)=>{
                     return(
                         ingredients[ingredient] && (
