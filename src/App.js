@@ -1,9 +1,37 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Header from './components/Header';
+import Customize from './components/Customize';
+import Checkout from './components/Checkout';
+
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 function App() {
+  const [ingredients,setIngredients] =useState({
+    cheese:false,
+    mushroom:false,
+    tomato:false,
+    basil:false,
+    olive:false,
+    pineapple:false
+  });
   return (
     <div className="App">
       <Header />
+      <Router>
+        <Switch>
+            <Route exact path="/">
+              <Customize ingredients={ingredients} setIngredients={setIngredients}/>
+            </Route>
+            <Route path="/checkout">
+              <h1>Checkout</h1>
+            </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
