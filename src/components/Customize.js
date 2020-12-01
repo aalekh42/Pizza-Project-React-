@@ -15,10 +15,11 @@ export default function Customize({ingredients,setIngredients}){
 
     let history = useHistory();
     const onChange = (event, name) => {
-        
+        console.log(localStorage);
         let newIngredients = JSON.parse(JSON.stringify(ingredients));
         newIngredients[name] = event;
         setIngredients(newIngredients);
+        localStorage.setItem("ingredients", JSON.stringify(newIngredients));
       };
 return(
     <>

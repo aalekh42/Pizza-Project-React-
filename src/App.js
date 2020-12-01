@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Header from './components/Header';
 import Customize from './components/Customize';
 import Checkout from './components/Checkout';
@@ -17,6 +17,13 @@ function App() {
     olive:false,
     pineapple:false
   });
+
+  useEffect(() => {
+    const data = localStorage.getItem("ingredients");
+    if (data) {
+      setIngredients(JSON.parse(data));
+    }
+  }, []);
 
   return (
     <div className="App">
