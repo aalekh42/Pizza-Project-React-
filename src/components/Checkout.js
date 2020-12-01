@@ -9,14 +9,20 @@ return(
     <>
         <div className="row">
             <div className="col" style={{border:"2px solid black"}}>
-                <p style={{ fontFamily: "Comfortaa" }}>My Ingredients</p>
+                <div className="abc" style={{ fontFamily: "Comfortaa",fontSize:25}}>
+                    <i class="fa fa-hand-o-down" aria-hidden="true"></i> My Ingredients 
+                </div>
+                
                 {Object.keys(ingredients).map((ingredient)=>{
                     return(
                         ingredients[ingredient] && (
-                            <p>
-                                {ingredient[0].toUpperCase()}
-                                {ingredient.substr(1)}
-                            </p>
+                            <div style={{color:"blue"}}>
+                                <p style={{fontSize:25,fontFamily:"Century"}}>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    {ingredient[0].toUpperCase()}
+                                    {ingredient.substr(1)}
+                                </p>
+                            </div>
                         )
                     );
                 })}
