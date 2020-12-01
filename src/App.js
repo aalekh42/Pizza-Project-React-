@@ -2,8 +2,6 @@ import React,{useState} from 'react';
 import Header from './components/Header';
 import Customize from './components/Customize';
 import Checkout from './components/Checkout';
-
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +17,7 @@ function App() {
     olive:false,
     pineapple:false
   });
+
   return (
     <div className="App">
       <Header />
@@ -28,7 +27,7 @@ function App() {
               <Customize ingredients={ingredients} setIngredients={setIngredients}/>
             </Route>
             <Route path="/checkout">
-              <h1>Checkout</h1>
+              <Checkout ingredients={ingredients} />
             </Route>
         </Switch>
       </Router>
