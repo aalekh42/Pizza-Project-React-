@@ -24,7 +24,7 @@ export default function Customize({ingredients,setIngredients}){
 return(
     <>
         <div className="row">
-            <div className="col" sm={4} style={{border:"2px solid black"}}>
+            <div className="col mt-5" sm={4} style={{border:"2px solid black"}}>
                 <div style={{maxHeight:500,maxWidth:500,position:"relative"}}>
 
                     <motion.div
@@ -105,8 +105,9 @@ return(
                     </motion.div>
                 </div>
             </div>
-            <div className="col" sm={8} style={{border:"2px solid blue"}}>
-                <label className="container-checkbox">
+            <div className="col mt-5" sm={8} style={{border:"2px solid blue"}} >
+                <b style={{fontSize:45,fontFamily:"Century",color:"#521700"}}>List of Ingredients</b>
+                <label className="container-checkbox pqr" > 
                   Pineapple
                     <input 
                     type="checkbox" 
@@ -116,7 +117,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label className="container-checkbox">
+                <label className="container-checkbox pqr">
                   Basil
                     <input 
                     type="checkbox" 
@@ -126,7 +127,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label className="container-checkbox">
+                <label className="container-checkbox pqr">
                   Olive
                     <input 
                     type="checkbox" 
@@ -136,7 +137,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label className="container-checkbox">
+                <label className="container-checkbox pqr">
                   Tomato
                     <input 
                     type="checkbox" 
@@ -146,7 +147,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label className="container-checkbox">
+                <label className="container-checkbox pqr">
                   Mushroom
                     <input 
                     type="checkbox" 
@@ -156,7 +157,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <label className="container-checkbox">
+                <label className="container-checkbox pqr">
                   Cheese
                     <input 
                     type="checkbox" 
@@ -166,7 +167,7 @@ return(
                     />
                     <span className="checkmark"></span>
                 </label>
-                <button onClick={() => history.push("/checkout")} className="proceedToCheckout">
+                <button style={{background:"#ED254E",fontFamily:"Century",color:"White"}} onClick={() => history.push("/checkout")} className="proceedToCheckout">
                     Proceed to Checkout
                 </button>
             </div>
@@ -175,3 +176,5 @@ return(
     </>      
 )
 }
+
+//Cheese Colour FBE689

@@ -17,6 +17,10 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
+.pqr{
+  color:#A32E00;
+  font-family: century;
+}
 .z1 {
   z-index: 1;
 }
@@ -60,17 +64,17 @@ body {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
 }
 
 /* On mouse-over, add a grey background color */
 .container-checkbox:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #FBE689;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container-checkbox input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #ED254E;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

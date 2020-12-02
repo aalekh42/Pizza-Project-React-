@@ -7,16 +7,16 @@ export default function Checkout({ingredients}){
     const [success, setSuccess] = useState(false);
 return(
     <>
-        <div className="row">
+        <div className="row mt-5">
             <div className="col" style={{border:"2px solid black"}}>
-                <div className="abc" style={{ fontFamily: "Comfortaa",fontSize:25}}>
+                <div className="abc ml-2" style={{ fontFamily: "Comfortaa",fontSize:25}}>
                     <i class="fa fa-hand-o-down" aria-hidden="true"></i> My Ingredients 
                 </div>
                 
                 {Object.keys(ingredients).map((ingredient)=>{
                     return(
                         ingredients[ingredient] && (
-                            <div style={{color:"blue"}}>
+                            <div className="ml-5" style={{color:"#A32E00"}}>
                                 <p style={{fontSize:25,fontFamily:"Century"}}>
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
                                     {ingredient[0].toUpperCase()}
@@ -26,13 +26,13 @@ return(
                         )
                     );
                 })}
-                    <button
-                        className="proceedToCheckout"
+                    <button style={{background:"#ED254E",fontFamily:"Century",color:"White"}} 
+                        className="proceedToCheckout ml-5"
                         onClick={() => history.push("/")}>Go Back</button>
-                    <button
+
+                    <button style={{ marginLeft: 10 ,background:"#ED254E",fontFamily:"Century",color:"White"}} 
                         onClick={() => setSuccess(true)}
-                        className="proceedToCheckout"
-                        style={{ marginLeft: 10 }}> Confirm </button>
+                        className="proceedToCheckout"> Confirm </button>
             </div>
             <div className="col" style={{border:"2px solid blue"}}>
                 {success && (
